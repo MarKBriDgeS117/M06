@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="../js/index.js"></script>
+    <title>Document</title>
+</head>
+
+<style>
+    body {
+        font-family: "Roboto", sans-serif;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    table,
+    form {
+        width: 500px;
+        margin: 20px auto;
+    }
+
+    table {
+        border-collapse: collapse;
+        text-align: center;
+    }
+
+    table td,
+    table th {
+        border: solid 1px black;
+    }
+
+
+    input {
+        display: block;
+        margin: 10px 0;
+        font-size: 20px;
+    }
+
+    #Sumatori {
+        text-align: right;
+    }
+</style>
+</head>
+
+<body>
+    <form>
+        <h1>Num.Factura: <span></span></h1>
+        <div>
+            <label>Articles:</label>
+            <select name="provincia"></select>
+            <button>+</button>
+        </div>
+
+
+    </form>
+    <table id="table">
+        <thead>
+            <tr>
+                <th>Codi</th>
+                <th>Nom</th>
+                <th>Quantitat</th>
+                <th>Preu</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <div id="Sumatori">
+        <p><b>Base Imposable:</b> <span>0</span>€</p>
+        <p><b>Iva 21%:</b> <span>0</span>€</p>
+        <p><b>Import Total:</b> <span>0</span>€</p>
+    </div>
+    <div>
+        <span>
+        <label>Codi Factura:
+            <input id ="codi" type="text"></label>
+        <button id="botoAlta">Recuperar</button>
+        </span>
+    </div>
+</body>
+
+</html>
