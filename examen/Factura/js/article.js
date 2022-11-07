@@ -16,4 +16,7 @@ export default class Article {
     AumentarQuantitat() {
         this.Quantitat++;
     }
+    RestarQuantitat() {
+        this.Quantitat--;
+    }
 }

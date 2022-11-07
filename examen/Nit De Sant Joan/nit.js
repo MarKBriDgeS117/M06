@@ -73,10 +73,13 @@ function PintarPantalla() {
   nit.mostrar(cnv, ctx);
   return nit;
 }
-
+function getRandomColor() {
+  color = "hsl(" + Math.random() * 360 + ", 100%, 75%)";
+  return color;
+}
 
 function CrearCercle() {
-  return new Circle(Random(5, window.innerWidth - 6), Random(5, window.innerHeight - 30), Random(1, localStorage.getItem("radiMaxim")), "white", Random(1, 10), "rgba(255, 255, 255," + Math.random() + 0, 1 + ")");
+  return new Circle(Random(5, window.innerWidth - 6), Random(5, window.innerHeight - 30), Random(1, localStorage.getItem("radiMaxim")), getRandomColor(), Random(1, 10), "rgba(255, 255, 255," + Math.random() + 0, 1 + ")");
 }
 
 function CalcularDistancia(circl1, circl2) {
